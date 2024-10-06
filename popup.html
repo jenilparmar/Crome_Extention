@@ -4,68 +4,18 @@
     <title>Image Response</title>
     <style>
       body {
-        background-color: black;
-        opacity: 1;
-      }
-      button {
-        width: 10em;
-        position: relative;
-        height: 3.5em;
-        border: 3px ridge #149cea;
-        outline: none;
         background-color: transparent;
-        color: white;
-        transition: 1s;
-        border-radius: 0.3em;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
       }
 
-      button::after {
-        content: "";
-        position: absolute;
-        top: -10px;
-        left: 3%;
-        width: 95%;
-        height: 40%;
-        background-color: black;
-        transition: 0.5s;
-        transform-origin: center;
-      }
-
-      button::before {
-        content: "";
-        transform-origin: center;
-        position: absolute;
-        top: 80%;
-        left: 3%;
-        width: 95%;
-        height: 40%;
-        background-color: black;
-        transition: 0.5s;
-      }
-
-      button:hover::before,
-      button:hover::after {
-        transform: scale(0);
-      }
-
-      button:hover {
-        box-shadow: inset 0px 0px 25px #1479ea;
-      }
-      #response {
-        color: #149cea;
-        font-weight: 700;
-        font-size: 15px;
-        margin: 10px 10px;
-      }
+    #response{
+      color: black;
+    }
     </style>
   </head>
   <body>
     <button id="pasteImage">Paste Image</button>
     <center>
-      <div id="response">Welcome to Savitar</div>
+      <div id="response"></div>
     </center>
     <script src="popup.js"></script>
   </body>

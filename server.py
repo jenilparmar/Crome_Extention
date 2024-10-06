@@ -29,7 +29,7 @@ def get_gemini_response(input_text, image):
 @app.route("/get", methods=["POST"])
 def chatbot():
     if request.method == "POST":
-        input_text = "give answer of this question in form = `Answer of this question is (Right answer from option )` i want exact this form. if option is in the form of 1 2 3 4 than also map 1 to A 2 to B and so on "
+        input_text = "give answer of this question in form = (Right answer from option ) i want exact this form. if option is in the form of 1 2 3 4 than also map 1 to A 2 to B and so on. only answer should be A , B,C,D nothing else  "
         
         data = request.json
         uploaded_file = data.get('base64String')
